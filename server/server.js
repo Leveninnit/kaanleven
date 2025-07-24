@@ -35,3 +35,6 @@ app.post('/upload', upload.single('image'), (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+app.get('/', (req, res) => {
+  res.send('🟢 Image Upload API is running!');
+});
